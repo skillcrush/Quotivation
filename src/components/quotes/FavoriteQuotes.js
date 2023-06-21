@@ -9,7 +9,6 @@ function FavoriteQuotes({ favoriteQuotes, maxFaves, removeFromFavorites }) {
         <h3>Top 3 favorite quotes</h3>
         {favoriteQuotes.length > 0 && (
           <ul>
-            {" "}
             {favoriteQuotes.map((quote, index) => (
               <FavoriteQuoteCard
                 key={quote.id}
@@ -26,7 +25,7 @@ function FavoriteQuotes({ favoriteQuotes, maxFaves, removeFromFavorites }) {
               You can add {remainingFavoriteAmount} more {remainingFavoriteAmount === 1 ? "quote" : "quotes"} to your top three
               favorites by selecting from the options below.
               <br />
-              Once you choose, it will appear here.
+              Once you choose, they will appear here.
             </p>
           </div>
         )}

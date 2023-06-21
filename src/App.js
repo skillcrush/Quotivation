@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Loader } from "react-feather";
-import CategoryForm from "./components/quotes/CategoryForm";
 import FavoriteQuotes from "./components/quotes/FavoriteQuotes";
 import Quotes from "./components/quotes/Quotes";
 import Message from "./components/Message";

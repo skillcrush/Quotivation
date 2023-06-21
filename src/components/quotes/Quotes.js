@@ -9,8 +9,8 @@ function Quotes({ filteredQuotes, addToFavorites, category, favoriteQuotes, cate
         <div className='category-header'>
           <h2>Pick Your Favorite Quotes Below</h2>
           <p>
-            You have a collection of {filteredQuotes.length} great {category !== "All" && category}{" "}
-            {filteredQuotes.length === 1 ? "quote" : "quotes"}.
+            You have {filteredQuotes.length > 0 && "a collection of"} {filteredQuotes.length} great{" "}
+            {category !== "All" && category} {filteredQuotes.length === 1 ? "quote" : "quotes"}.
           </p>
           <CategoryForm categories={categories} category={category} handleCategoryChange={handleCategoryChange} />
         </div>
