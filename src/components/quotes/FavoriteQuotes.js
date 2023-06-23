@@ -14,15 +14,14 @@ function FavoriteQuotes({ favoriteQuotes, maxFaves, removeFromFavorites }) {
             ))}
           </ul>
         )}
-        {favoriteQuotes.length < maxFaves && (
-          <div className='favorite-quotes-description'>
-            <p>
-              You can add up to three favorites by selecting from the options below.
-              <br />
-              Once you choose, it will appear here.
-            </p>
-          </div>
-        )}
+
+        <div className='favorite-quotes-description'>
+          <p>
+            You can add up to three favorites by selecting from the options below.
+            <br />
+            Once you choose, it will appear here.
+          </p>
+        </div>
       </div>
     </section>
   );
