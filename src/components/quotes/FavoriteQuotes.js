@@ -2,15 +2,19 @@ import React from "react";
 import FavoriteQuoteCard from "./FavoriteQuoteCard";
 
 function FavoriteQuotes({ favoriteQuotes, maxFaves, removeFromFavorites }) {
-  const remainingFavoriteAmount = maxFaves - favoriteQuotes.length;
   return (
     <section className='favorite-quotes'>
       <div className='wrapper quotes'>
         <h3>Top 3 favorite quotes</h3>
         {favoriteQuotes.length > 0 && (
           <ul>
-            {favoriteQuotes.map((quote) => (
-              <FavoriteQuoteCard key={quote.id} quote={quote} removeFromFavorites={removeFromFavorites} />
+            {favoriteQuotes.map((quote, index) => (
+              <FavoriteQuoteCard
+                key={quote.id}
+                listPosition={index + 1}
+                quote={quote}
+                removeFromFavorites={removeFromFavorites}
+              />
             ))}
           </ul>
         )}
