@@ -2,7 +2,7 @@ import React from "react";
 import { Heart } from "react-feather";
 
 function QuoteCard({ quote, addToFavorites, favoriteQuotes }) {
-  const alreadyFavorite = favoriteQuotes && favoriteQuotes.find((favorite) => favorite.id === quote.id);
+  const alreadyFavorite = favoriteQuotes.find((favorite) => favorite.id === quote.id);
 
   const faveStyle = alreadyFavorite ? "#333" : "";
 
