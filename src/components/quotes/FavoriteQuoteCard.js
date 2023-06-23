@@ -2,7 +2,7 @@ import React from "react";
 
 function FavoriteQuoteCard({ quote, removeFromFavorites, listPosition }) {
   return (
-    <li className='quote-card' data-list-position={listPosition}>
+    <li className='quote-card'>
       <span className='close-quote' onClick={() => removeFromFavorites(quote.id)}>
         x
       </span>
