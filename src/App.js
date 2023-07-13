@@ -13,7 +13,28 @@ function App() {
   const [category, setCategory] = useState("All");
   const [showMessage, setShowMessage] = useState(false);
   const [messageText, setMessageText] = useState("");
-  const [favoriteQuotes, setFavoriteQuotes] = useState(JSON.parse(window.localStorage.getItem("favoriteQuotes")) || []);
+  const [favoriteQuotes, setFavoriteQuotes] = useState(
+    JSON.parse(window.localStorage.getItem("favoriteQuotes")) || [
+      {
+        id: 1,
+        author: "Maya Angelou",
+        text: "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+        categories: ["Empathy"]
+      },
+      {
+        id: 2,
+        author: "Sheryl Sandberg",
+        text: "We need to live in a world where women are not only equal to men, but perceived as such.",
+        categories: ["Leadership"]
+      },
+      {
+        id: 3,
+        author: "Mary Barra",
+        text: "The formula for success is simple: work hard, stay focused, and never give up.",
+        categories: ["Motivation"]
+      }
+    ]
+  );
   const quotesUrl =
     "https://gist.githubusercontent.com/skillcrush-curriculum/6365d193df80174943f6664c7c6dbadf/raw/1f1e06df2f4fc3c2ef4c30a3a4010149f270c0e0/quotes.js";
   const categories = ["All", "Leadership", "Empathy", "Motivation", "Learning", "Success", "Empowerment"];
