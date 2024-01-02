@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 
 const Message = ({ messageText, removeMessage }) => {
   useEffect(() => {
-    const messageTimeout = setTimeout(() => {
+    const messageTimeout = window.setTimeout(() => {
       removeMessage();
     }, 1500);
-    window.setTimeout(messageTimeout);
 
     return () => window.clearTimeout(messageTimeout);
   });
