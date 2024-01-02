@@ -7,8 +7,7 @@ const Message = ({ messageText, removeMessage }) => {
     }, 1500);
 
     return () => window.clearTimeout(messageTimeout);
-  },[]);
-
+  });
   return (
     <div className='message'>
       <p>{messageText}</p>
