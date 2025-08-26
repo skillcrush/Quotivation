@@ -186,7 +186,7 @@ footer {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #ad7000;
+  color: #8A5A00;
 }
 
 .favorite-quotes .favorite-quotes-description p {
@@ -309,7 +309,7 @@ footer {
   transform: scale(1.2);
 }
 
-.quote-card div > h3 {
+.quote-card div>h3 {
   margin: 3rem 0;
   font-weight: 400;
 }
@@ -364,6 +364,7 @@ footer {
     opacity: 0;
     transform: translateY(-3rem);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -374,17 +375,21 @@ footer {
   .all-quotes .quotes {
     justify-content: space-between;
   }
+
   .all-quotes .quote-card {
     width: calc(50% - 2.5rem);
   }
+
   .quotes .category-header {
     justify-content: space-between;
   }
+
   .favorite-quotes .quote-card h3 {
     width: 70%;
     line-height: 44px;
     font-size: 2rem;
   }
+
   .favorite-quotes .quote-card p {
     text-align: center;
     font-size: 1.5rem;
@@ -396,13 +401,16 @@ footer {
   .all-quotes .quotes {
     justify-content: flex-start;
   }
+
   .all-quotes .quote-card {
     width: calc(33% - 1.42rem);
   }
+
   .category-header {
     justify-content: space-between;
     align-items: flex-start;
   }
+
   .quotes .category-header p {
     text-align: left;
   }
